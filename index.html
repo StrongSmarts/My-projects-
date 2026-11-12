@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="A searchable list of no-proof class action settlement claims sorted by deadline." />
+    <title>No-Proof Class Action Claims — Sorted by Deadline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header"><div class="wrap">
+      <p class="eyebrow">No receipt needed · Updated Nov 12, 2026</p>
+      <h1>Class action money you can claim without proof of purchase.</h1>
+      <p class="lede">Every open settlement below accepts claims with no receipts or documents for the basic payment. Sorted by the soonest deadline, with what it’s worth, who qualifies, and why the lawsuit was filed in plain English.</p>
+      <div class="summary" aria-live="polite">
+        <span><b id="sOpen">0</b> open claims</span><span><b id="sWeek">0</b> close within 7 days</span><span><b id="sTop">$0</b> highest listed payout</span>
+      </div>
+    </div></header>
+    <div class="controls"><div class="wrap controls-inner">
+      <div class="toolbar">
+        <div class="search"><label class="visually-hidden" for="q">Search settlements</label><input id="q" type="search" placeholder="Search a company, product, or state…" autocomplete="off" /></div>
+        <div class="sort-wrap"><label class="visually-hidden" for="sort">Sort by</label><select id="sort" aria-label="Sort settlements"><option value="deadline">Soonest deadline</option><option value="payout">Highest payout</option></select></div>
+      </div>
+      <div id="chips" class="chips" role="group" aria-label="Filter by category"></div>
+    </div></div>
+    <main class="wrap page-main" id="list" aria-live="polite"></main>
+    <aside id="tracker" class="tracker" hidden aria-live="polite"><span><b id="tCount">0</b> claims tracked</span><span>Up to <b id="tMax">$0</b></span><button type="button" id="tClear">Clear</button></aside>
+    <footer class="site-footer"><div class="wrap">
+      <p><b>How to read the payout.</b> The amount shown is the range listed in the settlement. For data breach cases, the top figure usually requires documented losses; the no-proof option is typically a smaller flat cash payment or free credit monitoring. Many payments are pro rata, so they shrink or grow based on how many people file.</p>
+      <p><b>Only file if you qualify.</b> Submitting a claim for a settlement you are not part of is fraud. Defendants in these cases deny wrongdoing; the reasons listed are the plaintiffs’ allegations. Always file on the official settlement administrator’s website.</p>
+      <p>Listings compiled from public settlement notices. This page is informational and not legal advice.</p>
+    </div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
